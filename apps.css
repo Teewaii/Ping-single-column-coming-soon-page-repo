@@ -91,11 +91,16 @@ body {
     border: none;
     font-size: 11px;
     color: white;
-    opacity: .5;
     background-color: var(--Blue);
     width: 100%;
     box-shadow: 1px 0 1px 1px rgba(79, 125, 243, .9);
     cursor: pointer;
+
+}
+
+.sub-form button:hover {
+    background-color: hsla(223, 87%, 63%, 0.658);
+    transition: all .5s ease;
 
 }
 

@@ -38,8 +38,6 @@ body {
     margin: 2rem;
 }
 
-
-
 .header {
     display: flex;
     flex-direction: column;
@@ -65,25 +63,26 @@ body {
     font-size: .8em;
 }
 
-.sub-form form {
+.form-control form {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 2.5rem;
+    border: 1px solid red;
 }
 
-.sub-form input {
+
+.form-control input {
     padding: .7rem;
     border-radius: 50px;
     border: 1px solid var(--Blue);
     font-size: 11px;
     color: var(--Gray);
-    opacity: .35;
+    display: block;
     width: 60vw;
     text-indent: 15px;
-    margin-bottom: 1rem;
-}
 
+}
 
 .sub-form button {
     padding: .7rem;
@@ -94,7 +93,11 @@ body {
     background-color: var(--Blue);
     width: 100%;
     box-shadow: 1px 0 1px 1px rgba(79, 125, 243, .9);
+    display: block;
     cursor: pointer;
+    margin-top: 2rem;
+    position: relative;
+
 
 }
 
@@ -107,12 +110,12 @@ body {
 .dashboard img {
     width: 70vw;
     margin-bottom: 2rem;
-    margin-top: -3px;
+    margin-top: 1.5rem;
 }
 
 .social {
     font-size: 12px;
-
+    margin-top: -1rem;
 }
 
 .social ul {
@@ -136,12 +139,44 @@ body {
     font-size: 8.5px;
     margin-top: 1.3rem;
     color: var(--Gray);
+
 }
 
-.footer {
-    margin-bottom: 90px;
+.attribution {
+    position: sticky;
+    margin-top: -3rem;
     font-size: 10px;
 }
+
+
+.form-control small {
+    position: absolute;
+    visibility: hidden;
+    /* border: 1px solid red; */
+    top: 14rem;
+    margin-bottom: -3rem;
+}
+
+.form-control.error small {
+    color: red;
+    visibility: visible;
+}
+
+.form-control.error input {
+    visibility: visible;
+    border: 1px solid red;
+}
+
+.form-control.success input {
+    visibility: visible;
+    border: 1px solid green;
+}
+
+.form-control.success small {
+    color: rgb(6, 126, 22);
+    visibility: visible;
+}
+
 
 @media (min-width:600px) {
 
@@ -152,7 +187,7 @@ body {
 
     .logo {
 
-        width: 55px;
+        width: 65px;
         margin: 1rem;
     }
 
@@ -194,19 +229,23 @@ body {
     .sub-form button {
         margin: 0;
         margin-left: .5rem;
-        width: 25%;
+        width: 110px;
         box-shadow: 0 1px 6px 1px rgba(79, 125, 243, .5);
+
     }
 
     .dashboard img {
         width: 42vw;
-        margin-top: -1rem;
+        margin-top: .2rem;
     }
 
-
-    .footer {
-        margin-bottom: -90px;
+    .attribution {
+        margin-top: -2rem;
         font-size: 10px;
     }
 
-}
+    .form-control small {
+        position: absolute;
+        visibility: hidden;
+        top: 14rem;
+    }

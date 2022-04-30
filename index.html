@@ -36,10 +36,13 @@
       </div>
 
       <div class="sub-form">
-        <form action="#" for="email" name="emailForm" method="post">
-          <input type="email" name="email" id="" required placeholder="Your email address"
-            oninvalid="this.setCustomValidity('please enter a valid email')" oninput="this.setCustomValidity('')" />
-          <button type="submit" class="btn btn-primary">Notify Me</button>
+        <form action="/" class="form" id="emailForm" name="emailForm">
+          <div class="form-control">
+            <input type="email" name="email" id="email" placeholder="Your email address">
+            <small>Error Message</small>
+          </div>
+          <button type="submit" id="emailSubmit">Notify Me</button>
+
         </form>
       </div>
 
@@ -66,6 +69,7 @@
       Coded by <a href="https://github.com/Teewaii/Ping-single-column-coming-soon-page-repo.git">Ajimati Taiye</a>.
     </p>
   </footer>
+  <script src="apps.js"></script>
 </body>
 
 </html>

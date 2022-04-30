@@ -26,7 +26,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid red; */
     padding: 2rem;
     height: 100vh;
     margin-top: -40px;
@@ -81,6 +80,7 @@ body {
     display: block;
     width: 60vw;
     text-indent: 15px;
+    /* position: relative; */
 
 }
 
@@ -95,9 +95,7 @@ body {
     box-shadow: 1px 0 1px 1px rgba(79, 125, 243, .9);
     display: block;
     cursor: pointer;
-    margin-top: 2rem;
-    position: relative;
-
+    margin-top: .8rem;
 
 }
 
@@ -150,11 +148,9 @@ body {
 
 
 .form-control small {
-    position: absolute;
+    margin-top: .5rem;
     visibility: hidden;
-    /* border: 1px solid red; */
-    top: 14rem;
-    margin-bottom: -3rem;
+
 }
 
 .form-control.error small {
@@ -178,7 +174,7 @@ body {
 }
 
 
-@media (min-width:600px) {
+@media (min-width:900px) {
 
     .container {
         margin-top: 0;
@@ -205,20 +201,11 @@ body {
 
     .sub-form form {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 2rem;
-    }
-
-
-    .sub-form form {
-        display: flex;
         justify-content: center;
         flex-direction: row;
         align-items: center;
         margin-bottom: 1.5rem;
         padding: 1rem;
-
     }
 
     .sub-form input {
@@ -227,7 +214,7 @@ body {
     }
 
     .sub-form button {
-        margin: 0;
+        margin-top: -1.5rem;
         margin-left: .5rem;
         width: 110px;
         box-shadow: 0 1px 6px 1px rgba(79, 125, 243, .5);
@@ -236,16 +223,16 @@ body {
 
     .dashboard img {
         width: 42vw;
-        margin-top: .2rem;
+        margin-top: -1rem;
     }
 
     .attribution {
-        margin-top: -2rem;
+        margin-top: -1rem;
         font-size: 10px;
     }
 
     .form-control small {
-        position: absolute;
         visibility: hidden;
-        top: 14rem;
+
     }
+}

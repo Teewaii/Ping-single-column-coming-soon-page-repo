@@ -37,25 +37,25 @@ body {
     margin: 2rem;
 }
 
-.header {
+header {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.header h4 {
+header h1 {
     color: var(--Gray);
     font-weight: 300;
     margin-bottom: .8rem;
     font-size: 1.7rem;
 }
 
-.header span {
+header span {
     color: black;
     font-weight: 700;
 }
 
-.header p {
+header p {
     font-size: 11px;
     margin-bottom: 1rem;
     color: var(--Gray);
@@ -185,13 +185,13 @@ body {
         margin: 1rem;
     }
 
-    .header h4 {
+    header h1 {
         font-size: 2.2rem;
         font-weight: 300;
         margin-bottom: .5rem;
     }
 
-    .header p {
+    header p {
         font-size: 13px;
         margin-bottom: .6rem;
     }

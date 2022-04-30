@@ -74,7 +74,7 @@ header p {
 .form-control input {
     padding: .8rem;
     border-radius: 50px;
-    border: 1px solid var(--Blue);
+    border: 1px solid var(--PaleBlue);
     font-size: 11px;
     color: var(--Gray);
     display: block;
